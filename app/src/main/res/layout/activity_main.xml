@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logopizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="136dp"
+            app:srcCompat="@drawable/ic_logopizza" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logopizza"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="280dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Order"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="300dp"
+            android:fontFamily="@font/nunito"
+            android:text="Topping"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbMeat"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="319dp"
+            android:fontFamily="@font/nunito"
+            android:text="Jumlah"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnKurang"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="284dp"
+            android:fontFamily="@font/nunito"
+            android:text="Pembayaran"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/rdBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="14dp">
+
+            <RadioButton
+                android:id="@+id/rdDebit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="-9dp"
+                android:buttonTint="@color/lightpink"
+                android:fontFamily="@font/nunito"
+                android:text="Debit"
+                android:textColor="@color/primary_text"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rdCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="@color/lightpink"
+                android:fontFamily="@font/nunito"
+                android:text="Cash"
+                android:textColor="@color/primary_text"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rdBayar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="285dp"
+            android:fontFamily="@font/nunito"
+            android:text="Nama"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNama"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="29dp"
+            android:background="@drawable/ic_txtnama"
+            android:fontFamily="@font/nunito"
+            android:padding="12dp"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/btnKurang"
+            android:backgroundTintMode="add"
+            android:onClick="tambah"
+            app:srcCompat="@drawable/ic_btnplus" />
+
+        <TextView
+            android:id="@+id/txtJumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/btnKurang"
+            android:fontFamily="@font/nunito"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTintMode="add"
+            android:onClick="kurang"
+            app:srcCompat="@drawable/ic_btnminus" />
+
+        <CheckBox
+            android:id="@+id/cbCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="286dp"
+            android:buttonTint="@color/lightpink"
+            android:clickable="true"
+            android:fontFamily="@font/nunito"
+            android:text="  Cheese"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cbMeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbCheese"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="286dp"
+            android:buttonTint="@color/lightpink"
+            android:clickable="true"
+            android:fontFamily="@font/nunito"
+            android:text="  Meat"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/nunito_bold"
+            android:text="PESAN"
+            android:textSize="15sp"
+            app:cornerRadius="30sp" />
+
+        <ImageButton
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logopizza"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTintMode="add"
+            app:srcCompat="@drawable/ic_btnreset" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

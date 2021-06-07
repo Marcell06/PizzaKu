@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="128dp"
+            android:layout_height="21dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Detail Pesanan"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="136dp"
+            app:srcCompat="@drawable/ic_logopizza" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp"
+            tools:text="Dear, ..." />
+
+        <TextView
+            android:id="@+id/tvTopping"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNama"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/nunito"
+            android:text="Pizza topping "
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvJumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTopping"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp"
+            tools:text="... Box" />
+
+        <TextView
+            android:id="@+id/tvTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJumlah"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/nunito"
+            android:text="Total Harga : Rp. "
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvMethod"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTotalHarga"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/nunito"
+            android:text="Metode Bayar : "
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMethod"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/nunito"
+            android:text="- Terimakasih -"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/nunito_bold"
+            android:text="KEMBALI"
+            android:textSize="15sp"
+            app:cornerRadius="30dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
